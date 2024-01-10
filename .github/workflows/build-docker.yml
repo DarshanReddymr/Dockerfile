@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag nginx:$(date +%s)
     - name: Run Docker image
-      run: docker run --name nginx1 -p 80:80 nginx:$(date +%s)
+      run: docker run --name nginx1 -p 80:80 docker.io/library/nginx:$(date +%s)
